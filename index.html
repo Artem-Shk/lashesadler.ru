@@ -28,6 +28,7 @@
             webvisor:true
         });
     </script>
+   
     <noscript><div><img src="https://mc.yandex.ru/watch/96921319" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
@@ -40,8 +41,14 @@
                     <!--<img src="./img/logo/logo.png" alt="Студия Маргариты Кочуровой" class="logo__img" width="200">-->
                     <img src="./img/logo/logo-big-2.png" alt="Студия Маргариты Кочуровой" class="logo__img"width="200">
                 </div>
-                <div class = "info"> 
+          
+                <div class="info"> 
+                    <a class="nav__link" id="phoneLink">+7(953)0882595</a>
                     
+                </div>
+                <div id="additionalInfo" style="display: none;">
+                    <p>ул. Ленина 73</p>
+                    <p>Время работы: пн-пт: 9:00-18:00, сб-вс: выходной</p>
                 </div>
                 <div class="nav__list-wrapper">
                     <ul class="nav__list">
@@ -143,6 +150,7 @@
                     <h2 class="title-2">О нас</h2>
                     <img src="./img/icons/emblema.png" alt="architecture" width="40">
                 </div>
+              
                 <div class="about-us__row">
                     <div class="about-us__content">
                         <div class="about-us__img">
@@ -216,10 +224,17 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
+                  
             </div>
         </section>
-
+        <div class="video-wraper" style=" justify-content: center;">
+            <video id="HiVideo" autoplay muted loop>
+                <source src="videos/HiVideo.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      
 
       
         <section class="price-services" id="price-services">
@@ -879,4 +894,16 @@
     <!--End of Tawk.to Script-->
 
 </body>
+<script type="text/javascript">
+    var phoneLink = document.getElementById('phoneLink');
+        var additionalInfo = document.getElementById('additionalInfo');
+
+        phoneLink.addEventListener('click', function() {
+            if (additionalInfo.style.display === 'block') {
+                additionalInfo.style.display = 'none'; // Скрываем блок с дополнительной информацией
+            } else {
+                additionalInfo.style.display = 'block'; // Показываем блок с дополнительной информацией
+            }
+        });
+</script>
 </html>

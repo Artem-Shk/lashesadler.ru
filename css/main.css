@@ -1153,4 +1153,33 @@ html, body {
     z-index: 100000;
     
 }
+.video-wraper{
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  height: 100vh; /* Установка высоты блока (например, на всю высоту экрана) */
+}
+.info {
+  position: relative;
+}
+#additionalInfo {
+  display: none;
+  position: absolute;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  z-index: 1; /* Чтобы всплывающий блок был поверх других элементов */
+}
+@media (max-width: 600px) {
+  #additionalInfo {
+      left: 0;
+      transform: none;
+      width: 100%;
+      max-width: none;
+  }}
+#HiVideo{
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
