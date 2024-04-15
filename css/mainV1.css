@@ -161,6 +161,16 @@ html, body {
   text-shadow: 1px 1px 1px #5c5648;
 }
 
+.title-5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.0em;
+  letter-spacing: 0.3px;
+  color: #f4c430;
+  text-shadow: 1px 1px 1px #5c5648;
+}
+
 .section__header {
   margin-bottom: 40px;
   text-align: center;
@@ -292,6 +302,56 @@ html, body {
 
 .btn-open-mobile-nav, .btn-close-mobile-nav {
   display: none;
+}
+.video-wraper{
+  display: contents;
+}
+.info-container {
+  flex-direction: column;
+}
+
+.info {
+  position: relative;
+}
+.info-number{
+  color: #f4c430;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #5c5648;
+}
+.info-adress{
+  color: #f4c430;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #5c5648;
+}
+.info-time{
+  color: #f4c430;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-shadow: 1px 1px 1px #5c5648;
+}
+#additionalInfo {
+  display: none;
+  position: absolute;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  z-index: 1; /* Чтобы всплывающий блок был поверх других элементов */
+}
+@media (max-width: 600px) {
+  #additionalInfo {
+      left: 0;
+      transform: none;
+      width: 100%;
+      max-width: none;
+  }}
+#HiVideo{
+  max-width: 100%;
 }
 
 @media (max-width: 1300px) {
@@ -621,6 +681,37 @@ html, body {
   .price-services__desc {
     order: 2;
   }
+}
+@media (max-width: 1050px) {
+  .discont-card {
+    padding: 15px;
+  }
+  .price-services__table {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .discont-card {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 670px) {
+  .discont-card {
+    padding: 20px 0;
+  }
+}
+.discont-Img-box img{
+  border-radius: 10px;
+}
+.discont-card{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  background-color: #F3F3F9;
+  min-height: 387px ;
 }
 
 .stock-original-price {
@@ -1151,35 +1242,34 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 100000;
-    
+  
 }
-.video-wraper{
-  display: flex;
-  justify-content: center; /* Выравнивание по горизонтали */
-  align-items: center; /* Выравнивание по вертикали */
-  height: 100vh; /* Установка высоты блока (например, на всю высоту экрана) */
-}
-.info {
-  position: relative;
-}
-#additionalInfo {
-  display: none;
-  position: absolute;
+/* стили страницы с услугами */
+
+.sidebar {
+  width: 200px;
   background-color: #f4f4f4;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  z-index: 1; /* Чтобы всплывающий блок был поверх других элементов */
+  padding: 20px;
 }
-@media (max-width: 600px) {
-  #additionalInfo {
-      left: 0;
-      transform: none;
-      width: 100%;
-      max-width: none;
-  }}
-#HiVideo{
-  max-width: 100%;
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="салон ресниц, брови, уход за ресницами, дизайн бровей, макияж ресниц, ламинирование ресниц, окрашивание бровей, уход за взглядом, мастера ресниц, индивидуальный подход, профессиональные услуги, ресницы объемом, красота, уход за бровями">
+    <meta name="description" content="Добро пожаловать в наш салон ресниц и бровей! Мы предоставляем профессиональные услуги формирования, дизайна и ухода за ресницами и бровями. Наши мастера помогут вам достичь идеального вида и подчеркнуть вашу красоту. Записывайтесь к нам и окунитесь в мир ухода за вашим взглядом.">
+    <title>Студия Маргариты Кочуровой</title>
+    <link rel="stylesheet" href="./swiper/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/mainV1.css" type = "text/css"/>
+    <link rel="shortcut icon" href="./img/icons/emblema.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Montserrat:wght@300;400&family=Nunito:wght@300;400&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link href="./img/icons/architecture.svg" rel="shortcut icon" type="image/x-icon">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(96921319, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+   
+    <noscript><div><img src="https://mc.yandex.ru/watch/96921319" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<header class="header">
+  <div class="container" >
+     
+  </div>  
+</header>
+<body>
+    <div class="container">
+        <div class="sidebar">
+          <ul>
+            <li><a href="#" onclick="showContent('home')">Главная</a></li>
+            <li><a href="#" onclick="showContent('about')">О нас</a></li>
+            <li><a href="#" onclick="showContent('services')">Услуги</a></li>
+            <li><a href="#" onclick="showContent('contact')">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div id="home" class="page">Содержимое для Главной страницы</div>
+          <div id="about" class="page">Содержимое для страницы О нас</div>
+          <div id="services" class="page">Содержимое для страницы Услуги</div>
+          <div id="contact" class="page">Содержимое для страницы Контакты</div>
+        </div>
+      </div>
+    
+      <script>
+        function showContent(pageId) {
+          var pages = document.querySelectorAll('.page');
+          for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+          }
+          document.getElementById(pageId).style.display = 'block';
+        }
+      </script>
+
+</body>
+</html>
